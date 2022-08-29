@@ -37,7 +37,7 @@ IONICONS - Ícones de código aberto para uso em aplicativos da Web.
 ## Instalação:
 - Instale o Git no seu computador.
 
-  ``` https://git-scm.com ```
+``` https://git-scm.com ```
 
  **Nota:** *Pesquise no Google a diversos artigos ensinando a instalar o Git passo a passo.*
  
@@ -48,7 +48,7 @@ IONICONS - Ícones de código aberto para uso em aplicativos da Web.
   
   - Utilize um **IDE(VS Code)** para visualizar o conteúdo.
   
-  ``` https://bit.ly/3Ay2L2Y ```
+``` https://bit.ly/3Ay2L2Y ```
   
    **Nota:** *Pesquise no Google a diversos artigos ensinando a instalar o IDE(VS Code) passo a passo, VS Code está disponível em múltiplos ambientes - Windows, Linux e MacOs.*
    
