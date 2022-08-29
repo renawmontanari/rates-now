@@ -1,0 +1,356 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Root Colors */
+:root {
+    --gray-color: rgb(90, 90, 90);
+    --grayLight-color: rgb(133, 133, 133);
+    --grayStrong-color: rgb(55, 52, 52);
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --blackLight-color: rgb(37, 37, 37);
+    --currencysHover-color: rgb(219, 219, 219);
+    --pink-color: rgb(255, 0, 247);
+  }
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    width: 100%;
+    background-color: var(--gray-color);
+}
+
+.container {
+    width: 100%;
+    background-color: var(--gray-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Scroll */
+section {
+    display: block;
+    width: 170px;
+    height: 600px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1em;
+}
+
+section::-webkit-scrollbar{
+    width: .5rem;
+}
+
+section::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+section::-webkit-scrollbar-thumb{
+    background: var(--grayLight-color);
+    border-radius: 5rem;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.header-box{
+    width: 100%;
+    height: 60px;
+    background-color: var(--grayStrong-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px 5px;
+}
+
+.logo {
+    width:245px;
+    height: 48px;
+    background-color: var(--grayStrong-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    width:50px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+
+.text-logo {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 0px 5px;
+    color: var(--white-color);
+}
+
+.text-now {
+    color: var(--pink-color);
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.presentation {
+    width:270px;
+    height: 48px;
+    background-color: var(--grayStrong-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-presentation {
+    font-size: 1.3em;
+    color: var(--white-color);
+}
+
+.icon-presentation {
+    font-size: 1.6em;
+    color: var(--white-color);
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
+.icon-presentation:hover {
+    font-size: 1.7em;
+    color: var(--pink-color);
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
+.theme {
+    width:50px;
+    height: 48px;
+    background-color: var(--grayStrong-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-theme {
+    font-size: 1.3em;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/* Curency Box */
+.box-curency {
+    width: 300px;
+    height: 400px;
+    background-color: var(--blackLight-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation:bounce-in-fwd 1.5s both;
+}
+
+.box-text-title {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    background-color: var(--grayStrong-color);
+}
+
+.text-title {
+    font-size: 1.3em;
+    color: var(--white-color);
+    margin-top: 0.8em;
+}
+
+.curencys {
+    width: 150px;
+    height: 40px;
+    background-color: var(--white-color);
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.curencys:hover {
+    background-color: var(--currencysHover-color);
+}
+
+.flags {
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 0px 9px;
+}
+
+.box-arrow {
+    width: 300px;
+    height: 130px;
+    text-align: center;
+    background-color: var(--grayStrong-color);
+}
+
+.arrow-icon {
+    width: 35px;
+    height: 35px;
+    color:var(--white-color);
+    animation: is-bouncing 1s cubic-bezier(1,.80,1,.96) alternate infinite;
+}
+
+/* Graphic Box */
+.box-graphic {
+    width: 970px;
+    height: 490px;
+    margin-left: 20px;
+    background-color: var(--blackLight-color);
+}
+
+/* Message Box */
+.box-message {
+    width: 370px;
+    height: 100px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border: solid 1px var(--black-color);
+}
+
+.hide {
+    display: none;
+}
+
+.box-message-content {
+    width: 320px;
+    height: 80px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-icon {
+    width: 330px;
+    height: 38px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--grayLight-color);
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.title-welcome {
+    margin-right: 85px;
+}
+
+.message-content {
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+.btn-close-presentation {
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+.btn-close-presentation:hover {
+    color: var(--pink-color);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Green Theme */
+.white .container {
+    background-color: var(--white-color);
+}
+
+.white {
+    background-color: var(--white-color);
+}
+
+.white .box-message {
+    background-color: var(--grayStrong-color);
+}
+
+.white .box-message-content {
+    background-color: var(--grayStrong-color);
+}
+
+.white .title-icon {
+    background-color: var(--grayStrong-color);
+}
+
+.white .title-welcome {
+    color: var(--white-color);
+}
+
+.white .message-content {
+    color: var(--white-color);
+}
+
+/* Animation */
+/* Btn Animation */
+@keyframes is-bouncing {
+    to {
+        transform: translateY(10px);
+    }
+}
+
+/* Box Animation */
+@keyframes bounce-in-fwd {
+    0% {
+        transform:scale(0);
+        animation-timing-function:ease-in;
+        opacity:0
+    } 38% {
+        transform:scale(1);
+        animation-timing-function:ease-out;
+        opacity:1
+    } 55% {
+        transform:scale(.7);
+        animation-timing-function:ease-in
+    } 72% {
+        transform:scale(1);
+        animation-timing-function:ease-out
+    } 81% {
+        transform:scale(.84);
+        animation-timing-function:ease-in
+    } 89% {
+        transform:scale(1);
+        animation-timing-function:ease-out
+    } 95% {
+        transform:scale(.95);
+        animation-timing-function:ease-in
+    } 100% {
+        transform:scale(1);
+        animation-timing-function:ease-out
+    }
+}

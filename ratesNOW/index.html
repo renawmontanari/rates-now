@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- Link FavIcon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo/logoRatesNow2.ico">
+    <!-- Link Chart JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <title>Rates NOW</title>
+</head>  
+<body class="white">
+  <!-- Header -->
+  <header>
+    <div class="header-box">
+      <div class="logo">
+        <img src="./assets/img/logo/logoRatesNow3.png" alt="logo" />
+        <p class="text-logo">RATES<span class="text-now">NOW</span></p>
+      </div>
+      <div class="presentation">
+        <p class="text-presentation">Olá, Seja Bem-vindo</p>
+        <ion-icon class="icon-presentation" id="btn-open-presentation" name="aperture-outline"></ion-icon>
+      </div>
+      <div class="theme">
+        <input type="checkbox" name="change-theme" id="change-theme" />
+        <label for="change-theme">
+          <ion-icon class="icon-theme" name="contrast-outline"></ion-icon>
+        </label>
+      </div>
+    </div>
+  </header> 
+
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <div class="box-curency">
+        <!-- Text title Box -->
+        <div class="box-text-title">
+          <p class="text-title">ESCOLHA SUA MOEDA</p>
+        </div>
+
+        <!-- Section Flags -->
+        <section>
+          <div class="cr1 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/us.gif">
+            <p class="country">USD</p>
+          </div> 
+          <div class="cr2 curencys scroll-page">
+            <img class="flags" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg">
+            <p class="country">EUR</p>
+          </div> 
+          <div class="cr3 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/jp.gif">
+            <p class="country">JPY</p>
+          </div> 
+          <div class="cr4 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/uk.gif">
+            <p class="country">GBP</p>
+          </div> 
+          <div class="cr5 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/au.gif">
+            <p class="country">AUD</p>
+          </div> 
+          <div class="cr6 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/ca.gif">
+            <p class="country">CAD</p>
+          </div> 
+          <div class="cr7 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/ch.gif">
+            <p class="country">CHF</p>
+          </div> 
+          <div class="cr8 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/cn.gif">
+            <p class="country">CNY</p>
+          </div> 
+          <div class="cr9 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/se.gif">
+            <p class="country">SEK</p>
+          </div>
+          <div class="cr10 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/nz.gif">
+            <p class="country">NZD</p>
+          </div>
+          <div class="cr11 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/mx.gif">
+            <p class="country">MXN</p>
+          </div>
+          <div class="cr12 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/sg.gif">
+            <p class="country">SGD</p>
+          </div>
+          <div class="cr13 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/hk.gif">
+            <p class="country">HKD</p>
+          </div>
+          <div class="cr14 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/no.gif">
+            <p class="country">NOK</p>
+          </div>
+          <div class="cr15 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/kr.gif">
+            <p class="country">KRW</p>
+          </div>
+          <div class="cr16 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/tr.gif">
+            <p class="country">TRY</p>
+          </div>
+          <div class="cr17 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/ru.gif">
+            <p class="country">RUB</p>
+          </div>
+          <div class="cr18 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/in.gif">
+            <p class="country">INR</p>
+          </div>
+          <div class="cr19 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/br.gif">
+            <p class="country">BRL</p>
+          </div>
+          <div class="cr20 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/za.gif">
+            <p class="country">ZAR</p>
+          </div>
+          <div class="cr21 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/ph.gif">
+            <p class="country">PHP</p>
+          </div>
+          <div class="cr22 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/cz.gif">
+            <p class="country">CZK</p>
+          </div>
+          <div class="cr23 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/id.gif">
+            <p class="country">IDR</p>
+          </div>
+          <div class="cr24 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/my.gif">
+            <p class="country">MYR</p>
+          </div>
+          <div class="cr25 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/hu.gif">
+            <p class="country">HUF</p>
+          </div>
+          <div class="cr26 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/is.gif">
+            <p class="country">ISK</p>
+          </div>
+          <div class="cr27 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/hr.gif">
+            <p class="country">HRK</p>
+          </div>
+          <div class="cr28 curencys scroll-page">
+            <img class="flags" src="http://www.geonames.org/flags/l/il.gif">
+            <p class="country">ILS</p>
+          </div>
+        </section>
+
+        <!-- Arrow Box -->
+        <div class="box-arrow">
+          <ion-icon class="arrow-icon" name="arrow-down-outline"></ion-icon>
+        </div>
+      </div><!-- End Box currency -->
+
+      <!-- Graphic Box -->
+      <div class="box-graphic">
+        <p class="info-graphic hide"></p>
+
+        <canvas id="chart" class="chart"></canvas>
+
+        <!-- Message Box -->
+        <div class="box-message hide">
+          <div class="box-message-content">
+            <div class="title-icon">
+              <p class="title-welcome">Seja bem vindo!</p>
+              <ion-icon class="btn-close-presentation" id="btn-close-presentation" name="close-outline"></ion-icon>
+            </div>
+            <div class="message-content">
+              <p>Fique a vontade para analisar todas as moedas disponíveis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Container -->
+  </main>
+
+  <!-- Link JS -->
+  <script src="./assets/js/scripts.js"></script>
+  <!-- Link IONICON -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
