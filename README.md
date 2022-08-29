@@ -43,8 +43,7 @@ IONICONS - Ícones de código aberto para uso em aplicativos da Web.
  
  - Clone o repositório no seu computador.
  
-  Abra o terminal e digite: 
-  🔎``` git clone 'link do repositório' ```
+  Abra o terminal e digite: ⌨️``` git clone 'link do repositório' ```
   
   - Utilize um **IDE(VS Code)** para visualizar o conteúdo.
   
